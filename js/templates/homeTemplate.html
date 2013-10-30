@@ -1,0 +1,62 @@
+<div id="home-template" type="text/html">
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">Settings</div>
+	  <div class="panel-body">
+	    <div class="row">
+	        <div class="col-md-4 input-group">
+	          	<input type='text' value='<%= lat %>' placeholder="Latitude" id="tbLatitude" class="form-control w50p">
+	          	<input type='text' value='<%= lon %>' placeholder="Longtitude" id="tbLongtitude" class="form-control w50p">
+	        </div>
+
+	        <div class="col-md-4 input-group">
+			        <div class="btn-group types-marker" data-toggle="buttons">
+			          <label class="btn btn-default type-marker active">
+			            <input type="radio" name="typeMarker" id="point">Point
+			          </label>
+			          <label class="btn btn-default type-marker">
+			            <input type="radio" name="typeMarker" id="quest">Quest
+			          </label>
+			        </div>
+			        <div class="btn-group">
+			        	<input type="button" class="btn btn-success" value="Add" id="AddMarker">
+			        </div>
+	        </div>
+		</div>
+	  </div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-8">
+				<div id="map-container" class="well">
+			    </div>
+        </div>
+        <div class="col-md-4 well" style="overflow-y: scroll; height:400px;">
+        	<div class="list-group list-added-markers">
+<!--         		<a href="javascript:void(0);" class="list-group-item">				  
+        			<span class="badge">14</span>
+				  Cras justo odio
+				</a> -->
+			</div>
+        </div>
+	</div>
+
+	<div class="row">
+        <div class="col-md-6">
+          <p class="well">The template still uses the default Bootstrap rows and columns.</p>
+        </div>
+        <div class="col-md-6">
+          <p class="well">But the full-width layout means that you wont be using containers.</p>
+        </div>
+        <div class="col-md-4">
+          <p class="well">Three Column Example</p>
+        </div>
+        <div class="col-md-4">
+          <p class="well">Three Column Example</p>
+        </div>
+        <div class="col-md-4">
+          <p class="well">You get the idea! Do whatever you want in the page content area!</p>
+        </div>
+	</div>
+</div>
